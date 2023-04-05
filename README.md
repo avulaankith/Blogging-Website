@@ -12,6 +12,8 @@ The javascript has the form validation code
 
 ## PHP
 The php folder has the code to validate user login and posting messages and replies for Users.
+* board.php - for posting and replying to messages
+* login.php - for validation of user login credentials
 
 ## SQL
 The SQL tables' schema is defined in TablesInDbBoard.txt
