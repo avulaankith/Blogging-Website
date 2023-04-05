@@ -19,6 +19,7 @@ The SQL tables' schema is defined in TablesInDbBoard.txt
 ## Running the code
 
 1. Install XAMPP in your desktop. In this case Ubuntu 22.04 LTS is used for the project.
-2. Copy the folder into `/opt/lampp/htdocs/` in your xampp installation path.
+2. Place the project folder in `/opt/lampp/htdocs/` in your xampp installation path.
 3. Run the XAMPP server using the command `sudo /opt/lampp/./manager-linux-x64.run`
+4. You can access the webpage using `https://localhost/<folder_name>/php/login.php` upon start of apache and sql server from xampp application. Replace folder name with your folder name.
 
