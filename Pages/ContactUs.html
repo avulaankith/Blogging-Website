@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <script src="../javascript/contactform.js"></script>
+    <title>Contact Us</title>
+    <link rel="icon" href="../Images/icon.png">
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="../Images/logo.png"
+            alt="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="../Index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="#news">News</a> -->
+        <a class="active" href="ContactUs.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="About.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../php/board.php">Message</a>
+    </div>
+    <h1 class="contactheading">Contact Us</h1>
+    <div class="contactus">
+        Phone: +1 (345) 678 9000 <br>
+        Email: contactus@ritzcarlton.com <br><br><br><br>
+        Address:<br>
+        403 Royal Street,<br>
+        Plano,<br>
+        Texas,<br>
+        PIN - 54684 <br>
+    </div>
+    <div class="contactform">
+        <h1 class="contactheading">Please fill the form to contact us: </h1>
+        <form action="../Index.html" method="get">
+            <label for="firstname">First Name: </label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your First Name"
+                onblur="valfirstName()"><br><br>
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your Last Name"
+                onblur="vallastName()"><br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email Address"
+                onblur="valEmail()"><br><br>
+            <label for="phone">Mobile Number: </label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your Phone Number"
+                onblur="mobileNumberValidation()"><br><br>
+            <label for="query">Query: </label>
+            <textarea name="query" id="query" cols="74" rows="7" placeholder="Please enter your Query"
+                oninput="checkLengthAddress()"></textarea>
+            <div class="add_para">
+                <p>Character Length: 0</p>
+            </div>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div>
+            <p>&hearts; Ritz Carlton</p>
+        </div>
+        <p>&copy;2022 Interior design agency &nbsp; &nbsp; &copy;2022 House planning agency</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <title>Login</title>
+    <link rel="icon" href="../Images/icon.png">
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="../Images/logo.png"
+            alt="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="../Index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="#news">News</a> -->
+        <a href="ContactUs.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="About.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="active" href="Form.html">Book a Room</a>
+    </div>
+    <div class="formcont">
+        <h1 class="formh1">Login</h1>
+        <form action="../php/login.php" method="post">
+            <label class="a1" for="username"> UserName: </label>
+            <input class="a2" type="text" id="username" name="username" placeholder="UserName"><br><br>
+            <label class="a3" for="password">Password: </label>
+            <input class="a4" type="password" id="password" name="password" placeholder="Password"><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>

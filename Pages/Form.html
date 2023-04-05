@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <title>Book a Room</title>
+    <link rel="icon" href="../Images/icon.png">
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="../images/logo.png"
+            alt="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="../Index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="#news">News</a> -->
+        <a href="ContactUs.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="About.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="active" href="Form.html">Book a Room</a>
+    </div>
+    <!-- <div class="container"></div> -->
+
+    <div class="formcont">
+        <h1 class="formh1">Book a Room</h1>
+        <form action="Submit.html" method="get">
+            <label class="a1" for="first_name">First Name: </label>
+            <input class="a2" type="text" id="first_name" placeholder="Enter your First Name"
+                onblur="valfirstName()"><br><br>
+            <label class="a3" for="last_name">Last Name: </label>
+            <input class="a4" type="text" id="last_name" placeholder="Enter your Last Name"
+                onblur="vallastName()"><br><br>
+            <label class="a5" for="email">Email: </label>
+            <input class="a6" type="email" name="email" id="email" placeholder="Enter your Email"
+                onblur="valEmail()"><br><br>
+            <label class="a7" for="password">password: </label>
+            <input class="a8" type="password" name="password" id="password" placeholder="Enter your password"
+                onblur="valPassword()" />
+            <img src="../Images/eye.png" alt="eye" id="togglePass" onclick="toggle()"><br><br>
+            <script src="../javascript/formvalidation.js"></script>
+            <label class="a9" for="phone">Mobile Number: </label>
+            <input class="a10" type="tel" name="phone" id="phone" placeholder="Enter your Mobile Number"
+                onblur="mobileNumberValidation()"><br><br>
+            <label class="info" for="address">Address: </label>
+            <textarea rows="5" cols="63" id="address"
+                placeholder="Enter address as - Street Name(Num and street ot Street and Num), #Apt, City, State, Area Code (zip code 5 digits only) "
+                onblur="addressValidation()"></textarea>
+            <br><br><br><br><br>
+            <label class="a11" for="checkin_date">Check In Date: </label>
+            <input class="a12" type="text" name="checkin_date" id="checkin_date" placeholder="mm/dd/yyyy or mm-dd-yyyy"
+                onblur="valcheckinDate()"><br><br>
+            <label class="a13" for="checkout_date">Check Out Date: </label>
+            <input class="a14" type="text" name="checkout_date" id="checkout_date"
+                placeholder="mm/dd/yyyy or mm-dd-yyyy" onblur="valcheckoutDate()"><br><br><br>
+            <label class="a17" for="type">Room Type: </label>
+            <input class="a30" type="radio" id="Economy" name="type" value="Economy" onclick="RchangeOptions()">
+            <label for="Economy">Economy</label>
+            <input class="a33" type="radio" id="Luxury" name="type" value="Luxury" onclick="RchangeOptions()">
+            <label for="Luxury">Luxury</label>
+            <input class="a35" type="radio" id="Premium" name="type" value="Premium" onclick="RchangeOptions()">
+            <label for="Premium">Premium</label><br><br>
+            <!-- <select class="a18" name="type" id="type" onblur="changeOptions()">
+                <option value="Economy">Economy</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Premium">Premium</option>
+            </select><br><br> -->
+            <label class="a15" for="bedroom">Bedroom: </label>
+            <select class="a16" name="bedroom" id="bedroom">
+                <option value="one">One Bedroom</option>
+                <option value="two">Two Bedroom</option>
+                <option value="three">Three Bedroom</option>
+            </select><br><br><br>
+
+            <label class="a19" for="person">Amenities: </label>
+            <input class="a30" type="checkbox" id="breakfast" name="amenities" value="breakfast">
+            <label for="breakfast">Complimentary Breakfast</label>
+            <input class="a33" type="checkbox" id="movies" name="amenities" value="movies">
+            <label for="movies">On-Demand Movies</label>
+            <input class="a35" type="checkbox" id="taxi" name="amenities" value="taxi">
+            <label for="taxi">Cab during stay</label>
+            <!-- <input class="a37" type="checkbox" id="number10" name="amenities" value="number10">
+            <label for="number10">10</label><br><br> -->
+            <br><br>
+            <label class="feedback" for="feedback">Feedback: </label>
+            <textarea rows="5" cols="63" placeholder="Enter your feedback about booking" id="feedback"
+                oninput="checkLengthAddress()"></textarea>
+            <div id="add_para">
+                <p>Character Length: 0</p>
+            </div>
+            <!-- <br><br><br><br><br> -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    <footer>
+        <div>
+            <p>&hearts; Ritz Carlton</p>
+        </div>
+        <p>&copy;2022 Interior design agency &nbsp; &nbsp; &copy;2022 House planning agency</p>
+    </footer>
+</body>
+
+</html>

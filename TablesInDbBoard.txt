@@ -1,0 +1,79 @@
+Place the project folder in /opt/lampp/htdocs/ for a linux machine.
+
+you can access the webpage using https://localhost/axa0721_pa4/php/login.php upon start of apache and sql server from xampp application.
+
+
+Instructions for database and table creation
+
+-- For database creation use the following text given in assignment document.
+
+To create the database, start the Apache Web Server and the MySQL Database on your PC using 
+the  XAMPP  manager  console.  Run phpMyAdmin on  your  browser,  create  a  new  database  with 
+name board by clicking on New. After you create it, select this database (under the name board), 
+go to the SQL tab, and cut and paste the SQL code for creation of tables.
+
+--
+-- Database: `board`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+create table posts (
+   id         varchar(13) primary key,
+   replyto    varchar(13) references posts (id),
+   postedby   varchar(10) references users (username),
+   datetime   datetime,
+   message    text
+);
+
+--
+-- Data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `replyto`, `postedby`, `datetime`, `message`) VALUES
+('636eef87e1eb2', '', 'deku', '2022-11-11 18:57:43', 'hello'),
+('636eefdc625d5', '', 'deku', '2022-11-11 18:59:08', 'hello buddy'),
+('636eeff6dd78f', '', 'harry', '2022-11-11 18:59:34', 'hello from harry'),
+('636ef9268c18d', '', 'deku', '2022-11-11 19:38:46', 'hello from deku'),
+('636ef9cd2d3e4', '636eeff6dd78f', 'deku', '2022-11-11 19:41:33', 'hello harry'),
+('637086cc4301d', '', 'harry', '2022-11-12 23:55:24', 'expecto patronum'),
+('637086e85fc47', '637086cc4301d', 'deku', '2022-11-12 23:55:52', 'One for All full Cowl'),
+('637137db7191c', '', 'deku', '2022-11-13 12:30:51', 'Hi Bakugo'),
+('637170dc44c9d', '', 'smith', '2022-11-13 16:34:04', 'hello from smith'),
+('63718c46e08dd', '637170dc44c9d', 'deku', '2022-11-13 18:31:02', 'hello smith'),
+('63718c656e8c7', '637170dc44c9d', 'deku', '2022-11-13 18:31:33', 'hello smith'),
+('63718c76ce023', '637170dc44c9d', 'deku', '2022-11-13 18:31:50', 'how are you'),
+('63718e6947125', '', 'deku', '2022-11-13 18:40:09', 'My hero academia'),
+('6376acdf8aed2', '', 'luffy', '2022-11-17 15:51:27', 'Orewa Luffy Kaizoku Onii!!'),
+('6376acf78e8a1', '63718c76ce023', 'luffy', '2022-11-17 15:51:51', 'Yoroshku');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+create table posts (
+   id         varchar(13) primary key,
+   replyto    varchar(13) references posts (id),
+   postedby   varchar(10) references users (username),
+   datetime   datetime,
+   message    text
+);
+--
+-- Data for table `users`
+--
+
+INSERT INTO `users` (`username`, `password`, `fullname`, `email`) VALUES
+('deku', MD5('deku'), 'izuku midoriyo', 'deku@myhero.edu'),
+('harry', MD5('harry'), 'Harry Potter', 'harry@hogwats.edu'),
+('luffy', MD5('meat'), 'Monkey D Luffy', 'luffy@strawhats.com'),
+('smith', MD5('mypass'), 'John Smith', 'smith@cse.uta.edu');
+
+
+You can see the tables in the database.
+
