@@ -1,5 +1,5 @@
 # Blogging-Website
-Blogging Website made using HTML, CSS, JavaScript and PHP to validate user logins and create posts as texts and reply to texts.
+Blogging Website made using HTML, CSS, JavaScript and PHP to validate user logins and create posts as texts and reply to texts. The website does form validation, user login validation and posting messages and replies of the users. 
 
 ## HTML
 Index.html and Pages constitute the HTML portion of Website
