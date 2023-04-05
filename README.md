@@ -1,23 +1,27 @@
 # Blogging-Website
 Blogging Website made using HTML, CSS, JavaScript, MySQL and PHP to validate user logins and create posts as texts and reply to texts. The website does form validation, user login validation and posting messages and replies of the users. 
 
-The website is implemented in two parts as two separate projects. One project is validation of forms in the hotel booking website using JavaScript and other part is developing a blogging website using PHP. The code houses both of the implementation using the same HTML and CSS.
+The website is implemented in two parts as two separate projects. One project is validation entered details in the forms of the hotel booking website using JavaScript and other part is developing a blogging website along with user login validation using PHP. The code houses both of the implementation using the same HTML and CSS.
 
 ## HTML
-Index.html and Pages constitute the HTML portion of Website
+Index.html and Directory Pages constitute the HTML portion of Website
 
 ## CSS
 Styles folder contains all CSS for the website
+* Styles/
+  * styles.css
 
 ## javascript 
 The javascript has the form validation code
-* contactform.js - for validation of contact details form
-* formvalidation.js - for validation of booking details form 
+* javascript/
+  * contactform.js - for validation of contact details form
+  * formvalidation.js - for validation of booking details form 
 
 ## PHP
 The php folder has the code to validate user login and posting messages and replies for Users.
-* board.php - for posting and replying to messages
-* login.php - for validation of user login credentials
+* php/
+  * board.php - for posting and replying to messages
+  * login.php - for validation of user login credentials
 
 ## SQL
 The SQL tables' schema is defined in TablesInDbBoard.txt
