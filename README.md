@@ -1,35 +1,49 @@
 # Blogging-Website
-Blogging Website made using HTML, CSS, JavaScript, MySQL and PHP to validate user logins and create posts as texts and reply to texts. The website does form validation, user login validation and posting messages and replies of the users. 
 
-The website is implemented in two parts as two separate projects. One project is validation of details entered in the forms of the hotel booking website using JavaScript and other part is developing a blogging website for the hotel website along with user login validation using PHP. The code houses both of the implementation using the same HTML and CSS.
+This repository contains a Blogging Website built using HTML, CSS, JavaScript, MySQL, and PHP. The website facilitates user login validation, posting messages, and replying to messages. It is implemented in two parts, focusing on form validation using JavaScript for a hotel booking website and creating a blogging platform with user authentication using PHP.
 
-## HTML
-Index.html and Directory Pages constitute the HTML portion of Website
+## Contents
 
-## CSS
-Styles folder contains all CSS for the website
-* Styles/
-  * styles.css
+### HTML
+- `index.html`: Main landing page of the website.
+- `pages/`: Directory containing additional HTML pages.
 
-## javascript 
-The javascript has the form validation code
-* javascript/
-  * contactform.js - for validation of contact details form
-  * formvalidation.js - for validation of booking details form 
+### CSS
+- `styles/`: Folder containing CSS files for styling the website.
+  - `styles.css`: Stylesheet for the entire website.
 
-## PHP
-The php folder has the code to validate user login and posting messages and replies for Users.
-* php/
-  * board.php - for posting and replying to messages
-  * login.php - for validation of user login credentials
+### JavaScript
+- `javascript/`: Folder housing JavaScript files.
+  - `contactform.js`: Script for validating contact details form.
+  - `formvalidation.js`: Script for validating booking details form.
 
-## SQL
-The SQL tables' schema is defined in TablesInDbBoard.txt
+### PHP
+- `php/`: Contains PHP scripts for user login validation and message posting.
+  - `board.php`: Allows users to post and reply to messages.
+  - `login.php`: Validates user login credentials.
 
-## Running the code
+### SQL
+- `TablesInDbBoard.txt`: Schema defining the SQL tables used in the project.
 
-1. Install XAMPP in your desktop. In this case Ubuntu 22.04 LTS is used for the project.
-2. Place the project folder in `/opt/lampp/htdocs/` in your xampp installation path.
-3. Run the XAMPP server using the command `sudo /opt/lampp/./manager-linux-x64.run`
-4. You can access the webpage using `https://localhost/<folder_name>/php/login.php` upon start of apache and sql server from xampp application. Replace folder name with your folder name.
+## Running the Project
 
+To run the project locally, follow these steps:
+
+1. Install XAMPP on your system. The instructions provided here assume Ubuntu 22.04 LTS is used.
+2. Place the project folder in the following directory within your XAMPP installation path: `/opt/lampp/htdocs/`.
+3. Start the XAMPP server using the command: `sudo /opt/lampp/./manager-linux-x64.run`.
+4. Once the Apache and SQL servers are running, access the webpage through: `https://localhost/<folder_name>/php/login.php`. Replace `<folder_name>` with the actual name of your project folder.
+
+## Usage
+
+- Navigate through the website using the provided HTML pages.
+- Form validations are handled using JavaScript for contact details and booking details.
+- PHP scripts validate user logins and enable posting and replying to messages on the board.
+
+## Contributions
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request or raise an issue.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
